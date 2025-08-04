@@ -80,6 +80,4 @@ docker pull dipshill/mycicd-demo-app
 ## 🙌 Author
 
 - Dip Shill
-- Cloud & DevOps Enthusiast
-- GitHub: @dipshill
 </xaiArtifact>
