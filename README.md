@@ -77,7 +77,4 @@ docker pull dipshill/mycicd-demo-app
 
 ---
 
-## 🙌 Author
 
-- Dip Shill
-</xaiArtifact>
