@@ -114,4 +114,26 @@ const checkWinner= () =>{
 
 reset.addEventListener("click",resetGame);
 
+const printDebugInfo = () => {
+    console.log("Debug Info: Game running smoothly.");
+}
+
+const unusedHelper = () => {
+    let a = 5;
+    let b = 10;
+    let c = a + b;
+    console.log("Unused helper result:", c);
+}
+
+const printDebugInfo2 = () => {
+    console.log("Debug Info: Game running smoothly.");
+}
+
+const unusedHelper2 = () => {
+    let a = 5;
+    let b = 10;
+    let c = a + b;
+    console.log("Unused helper result:", c);
+}
+
 
