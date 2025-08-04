@@ -1,6 +1,6 @@
 # mycicd-demo-app
 
-A simple static website served using NGINX in a Docker container. This project showcases containerization of frontend code and automated CI/CD using GitHub Actions.
+A lightweight, containerized static website powered by NGINX, built for fast deployment and learning DevOps practices with GitHub Actions. This project showcases the containerization of frontend code and automated CI/CD using GitHub Actions.
 
 ---
 
