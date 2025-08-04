@@ -36,17 +36,7 @@ https://deep2234.github.io/Tic_Tac_Toe/
 ---
 
 
-## 🧩 How It Works
 
-- The board is a 3x3 grid of buttons.
-- Players take turns (X and O).
-- The game checks for:
-  - Winning combinations
-  - A draw if all cells are filled
-- Displays a message for winner or draw.
-- Includes a reset button to start over.
-
----
 
 
 ## 📌 Learning Outcomes
