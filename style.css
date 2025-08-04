@@ -1,0 +1,133 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background-color: #31769e7c;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#tic{
+    color: #1b1b1b;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+    font-size: 50px;
+}
+.game_winner{
+    color: #1b1b1b;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+    font-size: 50px;
+}
+#msg{
+    color: #2b2b2b;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;   
+    font-size: 50px;
+}
+.hidden{
+    display: none;
+}
+
+
+.gameDraw{
+    color: #1b1b1b;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+    font-size: 50px;
+}
+#draw{
+    color: #2b2b2b;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;   
+    font-size: 50px;
+}
+.hidden{
+    display: none;
+}
+
+
+
+
+/* Container styling */
+.container {
+  height: 70vh;
+  width: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmin;
+}
+
+/* Game board */
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+/* Each box */
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  background-color: #4e8497;
+  border-radius: 0.6rem;
+  border: none;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.733);
+  font-size: 9vmin;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Hover effect */
+.box:hover {
+  background-color: #d9fffd;
+  transform: scale(1.018);
+}
+
+/* Reset button */
+#reset {
+  
+    font-size: 25px;
+    margin-top: 25px;
+    color: #fff;
+    background-color: #202020;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 1rem;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.306);
+    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out; 
+    
+    
+}
+
+#reset:hover {
+  background-color: #272727;
+  transform: translateY(0px); /* Slight pop-up effect */
+  box-shadow: 0 0px 30px #213841c9; /* Shadow for hover */
+}
