@@ -39,14 +39,6 @@ https://deep2234.github.io/Tic_Tac_Toe/
 
 
 
-## 📌 Learning Outcomes
-
-- DOM manipulation using JavaScript
-- Conditional logic
-- Responsive design using `vmin`
-- Event-driven programming
-
----
 
 
 
