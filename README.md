@@ -1,64 +1,85 @@
 # mycicd-demo-app
 
-This is a simple static website served using NGINX and Docker. It demonstrates how to containerize a frontend application and automate image building and deployment using GitHub Actions and Docker Hub.
+A simple static website served using NGINX in a Docker container. This project showcases containerization of frontend code and automated CI/CD using GitHub Actions.
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── .github/workflows/
+│   └── main.yml         # GitHub Actions workflow for CI/CD
+├── assets/              # Folder for image assets
+├── css/style.css        # CSS styling
+├── js/script.js         # JavaScript for interactivity
+├── index.html           # Main HTML page
+├── Dockerfile           # Docker instructions for building the image
+└── README.md            # Project documentation
+```
 
 ---
 
 ## 🚀 Features
 
-- Fully containerized with Docker
-- Served with lightweight NGINX
-- Automated build and push using GitHub Actions
-- No Node.js or backend used — just HTML, CSS, JS
+- Static frontend (HTML, CSS, JS only)
+- Served using lightweight NGINX
+- Containerized using Docker
+- CI/CD pipeline via GitHub Actions
+- Automatically pushes to Docker Hub
 
 ---
 
-## 🐳 Docker Instructions
+## 🐳 Run Locally with Docker
 
-### Build the Docker image
+### Build the Docker image:
 
 ```bash
 docker build -t mycicd-demo-app .
+```
 
+### Run the container:
 
+```bash
+docker run -p 3000:80 mycicd-demo-app
+```
 
+Open your browser and visit: http://localhost:3000
 
-📁 Project Structure
-.
-├── .github/workflows/
-│   └── main.yml          # GitHub Actions workflow for CI/CD
-├── assets/              # Folder for image assets
-├── Dockerfile           # Docker instructions for building the image
-├── index.html          # Main HTML page
-├── css/style.css       # CSS styling
-├── js/script.js        # JavaScript for interactivity
-└── README.md           # Project documentation
+---
 
+## 🔄 CI/CD Workflow
 
+The GitHub Actions workflow (.github/workflows/main.yml) automatically:
 
-🐳 Docker Setup
-🧱 Build the Docker Image
-To build the Docker image locally:
-docker build -t my-static-site .
+- Builds the Docker image
+- Logs in to Docker Hub
+- Pushes the image to: docker.io/dipshill/mycicd-demo-app:latest
 
-▶️ Run the Container
-Run the container and map port 3000 (host) to port 80 (container):
-docker run -p 3000:80 my-static-site
+---
 
-Open http://localhost:3000 in your browser to view the site. Images in the assets folder will be accessible (e.g., /assets/2025-07-08-18-54.png).
+## 📦 Pull from Docker Hub
 
-Note: Nginx inside the container listens on port 80, mapped to port 3000 on the host.
+You can pull the latest image using:
 
-🔄 CI/CD with GitHub Actions
-The project uses GitHub Actions to automate the build, test, and deployment process. The workflow:
+```bash
+docker pull dipshill/mycicd-demo-app
+```
 
-Triggers on push to the main branch.
-Builds and tests the Docker image using the Dockerfile.
-Deploys static files to Netlify.
+---
 
-The workflow file is located at .github/workflows/main.yml.
-Workflow Overview
+## 🛠 Technologies Used
 
-Checkout Code: Retrieves the repository code.
-Build and Test Docker Image: Builds the image and runs it to verify accessibility.
-Deploy to Netlify: Uploads static files (including assets) to Netlify.
+- HTML, CSS, JavaScript
+- Docker
+- NGINX (Alpine)
+- GitHub Actions
+
+---
+
+## 🙌 Author
+
+- Dip Shill
+- Cloud & DevOps Enthusiast
+- GitHub: @dipshill
+</xaiArtifact>
