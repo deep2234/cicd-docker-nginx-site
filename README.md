@@ -74,7 +74,3 @@ docker pull dipshill/mycicd-demo-app
 - Docker
 - NGINX (Alpine)
 - GitHub Actions
-
----
-
-
