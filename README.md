@@ -52,9 +52,9 @@ Open your browser and visit: http://localhost:3000
 
 The GitHub Actions workflow (.github/workflows/main.yml) automatically:
 
-- Builds the Docker image
-- Logs in to Docker Hub
-- Pushes the image to: docker.io/dipshill/mycicd-demo-app:latest
+- Builds the Docker image.
+- Logs in to Docker Hub.
+- Pushes the image to: docker.io/dipshill/mycicd-demo-app:latest.
 
 ---
 
